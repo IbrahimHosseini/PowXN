@@ -27,6 +27,13 @@ func recursivePow(x int, n int) int {
 	}
 
 	/**
+	 * If x is 0, the function returns 0 as the power of 0 to any number is 0.
+	 */
+	if x == 0 {
+		return 0
+	}
+
+	/**
 	 * If n is not 0, the function recursively calls itself with the arguments x and n-1,
 	 * and then multiplies the result by x.
 	 */
